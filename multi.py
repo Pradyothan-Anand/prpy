@@ -3,7 +3,13 @@ import threading
 import time
 
 
+
 def thread_function(name):
+	logging.info("Thread %s: starting",name)
+	time.sleep(1)
+	logging.info("Thread %s: finishing",name)
+
+def thread_function2(name):
 	logging.info("Thread %s: starting",name)
 	time.sleep(1)
 	logging.info("Thread %s: finishing",name)
